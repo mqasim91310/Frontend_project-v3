@@ -1,0 +1,81 @@
+/* Theme Specific Styles (Dark Mode) */
+body.dark-mode {
+    background-color: #222;
+    color: #eee;
+}
+
+body.dark-mode .main-header {
+    background: #1a1a1a;
+    border-bottom-color: #444;
+}
+
+body.dark-mode .main-nav a {
+    color: #eee;
+}
+
+body.dark-mode .main-nav a:hover {
+    color: #77aaff;
+}
+
+body.dark-mode .theme-toggle-button {
+    background: #555;
+}
+
+body.dark-mode .theme-toggle-button:hover {
+    background: #777;
+}
+
+body.dark-mode .content-section,
+body.dark-mode .counter-section,
+body.dark-mode .image-gallery,
+body.dark-mode .interactive-form {
+    background: #333;
+    color: #eee;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .sidebar {
+    background: #444;
+    color: #eee;
+}
+
+body.dark-mode .sidebar a {
+    color: #eee;
+    border-bottom-color: #555;
+}
+
+body.dark-mode .sidebar a:hover {
+    color: #77aaff;
+}
+
+body.dark-mode .main-footer {
+    background: #1a1a1a;
+}
+
+body.dark-mode .form-group input[type="text"],
+body.dark-mode .form-group input[type="email"] {
+    background-color: #444;
+    color: #eee;
+    border-color: #555;
+}
+
+body.dark-mode .form-group input:focus {
+    border-color: #77aaff;
+}
+
+body.dark-mode .interactive-form button[type="submit"] {
+    background: #555;
+}
+
+body.dark-mode .interactive-form button[type="submit"]:hover {
+    background: #777;
+}
+
+body.dark-mode .thumbnail-container img {
+    border-color: #555;
+}
+
+body.dark-mode .thumbnail-container img:hover,
+body.dark-mode .thumbnail-container img.is-active {
+    border-color: #77aaff;
+}

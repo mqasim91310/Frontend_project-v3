@@ -1,0 +1,254 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Header */
+.main-header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    border-bottom: #77aaff 3px solid;
+}
+
+.main-header h1 {
+    float: left;
+    margin: 0;
+}
+
+.main-nav {
+    float: right;
+    margin-top: 10px;
+}
+
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline;
+    padding: 0 15px;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    color: #77aaff;
+}
+
+.theme-toggle-button {
+    background: #77aaff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.theme-toggle-button:hover {
+    background: #5588dd;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.content-section {
+    flex: 3;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background: #e4e4e4;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar a:hover {
+    color: #77aaff;
+}
+
+/* Footer */
+.main-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+
+/* Counter Section */
+.counter-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.counter-section button {
+    background: #77aaff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.counter-section button:hover {
+    background: #5588dd;
+}
+
+/* Image Gallery */
+.image-gallery {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-image-display img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.thumbnail-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.thumbnail-container img {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.thumbnail-container img:hover, .thumbnail-container img.is-active {
+    border-color: #77aaff;
+}
+
+/* Interactive Form */
+.interactive-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #77aaff;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    height: 1.2em; /* Reserve space for error message */
+}
+
+.interactive-form button[type="submit"] {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.interactive-form button[type="submit"]:hover {
+    background: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header h1,
+    .main-nav {
+        float: none;
+        text-align: center;
+    }
+
+    .main-nav li {
+        display: block;
+        padding: 5px 0;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .content-section {
+        padding-right: 0;
+    }
+
+    .sidebar {
+        margin-top: 20px;
+    }
+}
